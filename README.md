@@ -15,4 +15,4 @@ cd test/cpp\
 make compile_gtest\
 vim App_test.cpp（如果修改参数的情况下，主要留意90行后的代码）\
 make\
-make run_test\
+make run_test
