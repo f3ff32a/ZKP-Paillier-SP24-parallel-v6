@@ -81,20 +81,20 @@ git submodule update --init --recursive
 +-- Makefile  // make script
 ```
 
-### Build Commands
+### How to use
+## v6 experimental commit parallelization
+
+This package includes an experimental GMP-based OpenMP implementation for matrix commitment in `PolynomialCommitment::commit(Mat, Vec, Vec)`.
+
+Run as usual:
 
 ```bash
-# full rebuild for C++ project
+cd test/cpp
+make clean
 make
-
-# build submodules
-make deps_build
-
-# build core library and run test case
-make lib_build
+export OMP_NUM_THREADS=16
+make run_test
 ```
-
-### How to use
 
 #### Generate Paillier Encryption Key
 
@@ -138,7 +138,8 @@ Please refer to the benchmark test script ([./src/cpp/app/App.cpp](./src/cpp/app
 All unit tests and end-to-end tests are coded and run with Google Test framework. When you full compile the project, all tests are automatically run. If you want to re-run the tests, you can type the following command:
 
 ```bash
-make cpp_test
+cd test/cpp
+make run_test
 ```
 
 By default, the test script will scan through the `/test/cpp` folder, and run all test cases found. If you want to run a specific test case, you should modify the `TEST_LIST` variable in the [./test/cpp/Makefile](./test/cpp/Makefile).
@@ -181,16 +182,4 @@ chmod +x /usr/bin/rsync
 
 And you should install `clang` / `llvm`.
 
-## v6 experimental commit parallelization
 
-This package includes an experimental GMP-based OpenMP implementation for matrix commitment in `PolynomialCommitment::commit(Mat, Vec, Vec)`.
-
-Run as usual:
-
-```bash
-cd test/cpp
-make clean
-make
-export OMP_NUM_THREADS=16
-make run_test
-```
