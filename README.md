@@ -181,7 +181,7 @@ chmod +x /usr/bin/rsync
 
 And you should install `clang` / `llvm`.
 
-## v5 experimental commit parallelization
+## v6 experimental commit parallelization
 
 This package includes an experimental GMP-based OpenMP implementation for matrix commitment in `PolynomialCommitment::commit(Mat, Vec, Vec)`.
 
