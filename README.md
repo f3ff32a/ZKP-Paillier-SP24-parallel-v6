@@ -1,5 +1,5 @@
 ## 操作指南
-unzip ZKP-Paillier-SP24-parallel-v6
+unzip ZKP-Paillier-SP24-parallel-v6\
 A(如果出现提示，输入A代表全部修改，注意必须大写)
 cd ZKP-Paillier-SP24-parallel-v6
 cd test/cpp
