@@ -1,0 +1,11 @@
+{
+  "java": "Amazon Corretto 1.8.0_504",
+  "result": "passed",
+  "upstream_commit": "29fb0f78964cd6019029d20228ee0bee3184e64d",
+  "test": "FixedScalarWidthRegression.java",
+  "samples": [
+    {"group": "BN254bG1", "coordinate_bits": 253, "scalar_bits": 254, "window": 11, "original_matches_direct": false, "corrected_matches_direct": true},
+    {"group": "BN254bG2", "coordinate_bits": 253, "scalar_bits": 254, "window": 11, "original_matches_direct": false, "corrected_matches_direct": true}
+  ],
+  "scope": "independent arithmetic regression, not formal Paillier performance"
+}

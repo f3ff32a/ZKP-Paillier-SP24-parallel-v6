@@ -1,0 +1,10 @@
+	QAP - primary input size: 65
+	QAP - total input size: 11236
+	QAP - pre degree: 11335
+	QAP - degree: 16384
+BENCH_DIZK scope=arithmetic_self_test same_statement=false mode=serial curve=BN254b messages=1 constraints=11335 variables=11236 primary_inputs=65 threads=1 repeat=1 setup_seconds=25.3040347 prove_seconds=5.7249886 verify_seconds=0.0695502 verified=true input_bundle_sha256=e134224a9a24e3f917d4b380c9897c43b0c29c1d216d131f2ca3a63dd412c698
+	QAP - primary input size: 65
+	QAP - total input size: 11236
+	QAP - pre degree: 11335
+	QAP - degree: 16384
+BENCH_DIZK scope=arithmetic_self_test same_statement=false mode=serial curve=BN254b messages=1 constraints=11335 variables=11236 primary_inputs=65 threads=1 repeat=2 setup_seconds=23.0639899 prove_seconds=5.5490333 verify_seconds=0.054767 verified=true input_bundle_sha256=e134224a9a24e3f917d4b380c9897c43b0c29c1d216d131f2ca3a63dd412c698

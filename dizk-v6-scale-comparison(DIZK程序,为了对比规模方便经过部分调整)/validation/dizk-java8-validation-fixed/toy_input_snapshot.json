@@ -1,0 +1,53 @@
+{
+  "directory": "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\dizk-fixtures-bn254b\\toy_paillier_lifted",
+  "format": "dizk-input-snapshot-v1",
+  "header": {
+    "assignment_hash": "83d8c610e5faca25cdbc311ee6c095fdd859b494b7f95768c1e97c60cd64e793",
+    "compiler_wall_seconds": 0.047000000000025466,
+    "constraints": 7633,
+    "field_modulus": "17855808334804902850260923831770255773646114952324966112694569107431857586177",
+    "format": "dizk-r1cs-v2",
+    "limb_bits": 16,
+    "max_integer_equation_bound": "116905068525",
+    "messages": 1,
+    "original_gates": 27,
+    "original_linear_rows": 53,
+    "original_ring_modulus": "3659161081",
+    "paillier_bits": 16,
+    "paillier_modulus": "60491",
+    "primary_inputs": 9,
+    "public_input_order": "constant 1, then distinct original public K in first-row occurrence order, little-endian limbs",
+    "public_k_values": [
+      "1",
+      "0",
+      "60491",
+      "205184576"
+    ],
+    "relation_hash": "87450821351f5e92ee5fa47944cd36c6f7dccb696c4b0c9ae6dc969d369d649e",
+    "same_statement": false,
+    "scope": "arithmetic_self_test",
+    "security_scope": "Same original modular gate/linear relation by integer lifting. Adapter is experimental and has not undergone a cryptographic security audit. Different proof system and security parameters.",
+    "source_gate_witness_sha256": "42bf0d4861a4c7c315abb4695b47517ee6d5b4ed82828874cf0a8ef057dde8e5",
+    "source_header_sha256": "f1080fa053e3da1ace787b27e7c425f626d63a74616d583deb2f7b175867bc82",
+    "source_linear_sha256": "0c8849b244244d638c569b38fc53cc51459cd9c9337a6f99cf9fe446fa82b00b",
+    "source_metadata": {
+      "bits": 16,
+      "fixture_notice": "Arithmetic adapter self-test only; not the v6 CBatchEnc experimental workload",
+      "format": "v6-ring-v1",
+      "gate_count": 27,
+      "linear_count": 53,
+      "messages": 1,
+      "modulus": "3659161081",
+      "paillier_modulus": "60491",
+      "scope": "arithmetic_self_test"
+    },
+    "statement_id": "aef20823ebf3c7c336b3d8837d0b1a395e8fafbe1953a4338b4e48f73cd0cbaf",
+    "variables": 7340
+  },
+  "input_bundle_sha256": "2a39c8b224c3c33c629ffad499f7152e7774b60e690914f8899ce5183cc9a384",
+  "sha256": {
+    "assignment.tsv": "83d8c610e5faca25cdbc311ee6c095fdd859b494b7f95768c1e97c60cd64e793",
+    "constraints.tsv": "87450821351f5e92ee5fa47944cd36c6f7dccb696c4b0c9ae6dc969d369d649e",
+    "header.json": "65928e6f428e7aeebd1ac3270e62f68ac51dddf3aa57630e106515b0ea23c836"
+  }
+}

@@ -1,0 +1,5 @@
+DIZK_COMPARISON_FAILED IllegalArgumentException: INCOMPLETE_INPUT: compiler has not completed this bundle
+java.lang.IllegalArgumentException: INCOMPLETE_INPUT: compiler has not completed this bundle
+	at comparison.R1CSIO.preflight(R1CSIO.java:48)
+	at comparison.DizkComparison.run(DizkComparison.java:158)
+	at comparison.DizkComparison.main(DizkComparison.java:58)

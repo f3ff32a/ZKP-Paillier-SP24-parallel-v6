@@ -1,0 +1,62 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+26/10/13 09:50:07 INFO SparkContext: Running Spark version 2.2.2
+26/10/13 09:50:07 WARN SparkContext: Support for Scala 2.10 is deprecated as of Spark 2.1.0
+26/10/13 09:50:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/13 09:50:08 ERROR Shell: Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:378)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:393)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:386)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:93)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:73)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2427)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:295)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at comparison.DizkComparison.run(DizkComparison.java:174)
+	at comparison.DizkComparison.main(DizkComparison.java:60)
+26/10/13 09:50:08 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+26/10/13 09:50:08 INFO SparkContext: Submitted application: DIZK strict Paillier R1CS comparison
+26/10/13 09:50:08 INFO SecurityManager: Changing view acls to: Anynomous,CodexSandboxOffline
+26/10/13 09:50:08 INFO SecurityManager: Changing modify acls to: Anynomous,CodexSandboxOffline
+26/10/13 09:50:08 INFO SecurityManager: Changing view acls groups to: 
+26/10/13 09:50:08 INFO SecurityManager: Changing modify acls groups to: 
+26/10/13 09:50:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Anynomous, CodexSandboxOffline); groups with view permissions: Set(); users  with modify permissions: Set(Anynomous, CodexSandboxOffline); groups with modify permissions: Set()
+26/10/13 09:50:13 INFO Utils: Successfully started service 'sparkDriver' on port 6902.
+26/10/13 09:50:13 INFO SparkEnv: Registering MapOutputTracker
+26/10/13 09:50:13 INFO SparkEnv: Registering BlockManagerMaster
+26/10/13 09:50:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/13 09:50:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/13 09:50:13 INFO DiskBlockManager: Created local directory at C:\Users\Anynomous\Documents\Codex\2026-10-12\a-related-work-cpu-side-acceleration-2\work\dizk-java8-validation\ring512_lifted-distributed\spill\blockmgr-e3d96a7f-f4ed-4efa-abe1-542b6cb2be5c
+26/10/13 09:50:13 INFO MemoryStore: MemoryStore started with capacity 2004.6 MB
+26/10/13 09:50:13 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/13 09:50:13 INFO Executor: Starting executor ID driver on host localhost
+26/10/13 09:50:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 6935.
+26/10/13 09:50:13 INFO NettyBlockTransferService: Server created on 127.0.0.1:6935
+26/10/13 09:50:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/13 09:50:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 6935, None)
+26/10/13 09:50:13 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:6935 with 2004.6 MB RAM, BlockManagerId(driver, 127.0.0.1, 6935, None)
+26/10/13 09:50:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 6935, None)
+26/10/13 09:50:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 6935, None)
+	QAP - primary input size: 65
+	QAP - total input size: 11236
+	QAP - pre degree: 11335
+	QAP - degree: 16384
+DIZK_COMPARISON_FAILED NullPointerException: null
+java.lang.NullPointerException
+	at algebra.curves.barreto_naehrig.BNG1.one(BNG1.java:117)
+	at algebra.curves.barreto_naehrig.BNG1.random(BNG1.java:121)
+	at algebra.curves.barreto_naehrig.BNG1.random(BNG1.java:17)
+	at zk_proof_systems.zkSNARK.DistributedSetup.generate(DistributedSetup.java:82)
+	at comparison.DizkComparison.run(DizkComparison.java:250)
+	at comparison.DizkComparison.main(DizkComparison.java:60)

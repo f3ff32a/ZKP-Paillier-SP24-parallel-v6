@@ -1,0 +1,61 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+26/10/13 10:01:29 INFO SparkContext: Running Spark version 2.2.2
+26/10/13 10:01:29 WARN SparkContext: Support for Scala 2.10 is deprecated as of Spark 2.1.0
+26/10/13 10:01:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/13 10:01:29 ERROR Shell: Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:378)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:393)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:386)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:93)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:73)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2427)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:295)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at comparison.DizkComparison.run(DizkComparison.java:180)
+	at comparison.DizkComparison.main(DizkComparison.java:58)
+26/10/13 10:01:29 INFO SparkContext: Submitted application: DIZK strict Paillier R1CS comparison
+26/10/13 10:01:29 INFO SecurityManager: Changing view acls to: Anynomous,CodexSandboxOffline
+26/10/13 10:01:29 INFO SecurityManager: Changing modify acls to: Anynomous,CodexSandboxOffline
+26/10/13 10:01:29 INFO SecurityManager: Changing view acls groups to: 
+26/10/13 10:01:29 INFO SecurityManager: Changing modify acls groups to: 
+26/10/13 10:01:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Anynomous, CodexSandboxOffline); groups with view permissions: Set(); users  with modify permissions: Set(Anynomous, CodexSandboxOffline); groups with modify permissions: Set()
+26/10/13 10:01:35 INFO Utils: Successfully started service 'sparkDriver' on port 9134.
+26/10/13 10:01:35 INFO SparkEnv: Registering MapOutputTracker
+26/10/13 10:01:35 INFO SparkEnv: Registering BlockManagerMaster
+26/10/13 10:01:35 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/13 10:01:35 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/13 10:01:35 INFO DiskBlockManager: Created local directory at C:\Users\Anynomous\AppData\Local\Temp\blockmgr-8cde90e5-96a1-4423-bbb2-b860c8c215d1
+26/10/13 10:01:35 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+26/10/13 10:01:35 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/13 10:01:35 INFO Executor: Starting executor ID driver on host localhost
+26/10/13 10:01:35 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 9143.
+26/10/13 10:01:35 INFO NettyBlockTransferService: Server created on 127.0.0.1:9143
+26/10/13 10:01:35 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/13 10:01:35 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 9143, None)
+26/10/13 10:01:35 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:9143 with 912.3 MB RAM, BlockManagerId(driver, 127.0.0.1, 9143, None)
+26/10/13 10:01:35 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 9143, None)
+26/10/13 10:01:35 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 9143, None)
+R1CSConstraint unsatisfied (index 64):
+<a,(1,x)> = 17855808334804902850260923831770255773646114952324966112694569107431857586176
+<b,(1,x)> = 1
+<c,(1,x)> = 0
+R1CSConstraint unsatisfied (index 0):
+<a,(1,x)> = 2
+<b,(1,x)> = 1
+<c,(1,x)> = 0
+DIZK_COMPARISON_FAILED IllegalArgumentException: R1CS witness does not satisfy the imported statement
+java.lang.IllegalArgumentException: R1CS witness does not satisfy the imported statement
+	at comparison.DizkComparison.run(DizkComparison.java:245)
+	at comparison.DizkComparison.main(DizkComparison.java:58)

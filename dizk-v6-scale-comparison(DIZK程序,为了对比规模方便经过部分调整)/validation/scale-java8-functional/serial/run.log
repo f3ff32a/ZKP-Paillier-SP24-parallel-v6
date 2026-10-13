@@ -1,0 +1,5 @@
+	QAP - primary input size: 2
+	QAP - total input size: 1027
+	QAP - pre degree: 1024
+	QAP - degree: 2048
+BENCH_DIZK scope=constraint_scale_benchmark same_statement=false mode=serial curve=BN254b messages=1 constraints=1024 variables=1027 primary_inputs=2 threads=1 repeat=1 setup_seconds=1.5590489 prove_seconds=1.9747835 verify_seconds=0.0674768 verified=true input_bundle_sha256=856d9257d41714cfd0a9fdc36f46e7a47349cf32e99fe9076aea6a70b29bbc9c

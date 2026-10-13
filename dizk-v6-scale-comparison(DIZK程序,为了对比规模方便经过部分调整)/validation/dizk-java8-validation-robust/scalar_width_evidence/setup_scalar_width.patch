@@ -1,0 +1,76 @@
+--- upstream/SerialSetup.java
++++ comparison/RobustSerialSetup.java
+@@ -5,7 +5,7 @@
+  * @copyright  MIT license (see LICENSE file)
+  *****************************************************************************/
+ 
+-package zk_proof_systems.zkSNARK;
++package comparison;
+ 
+ import algebra.fields.AbstractFieldElementExpanded;
+ import algebra.curves.AbstractG1;
+@@ -25,7 +25,7 @@
+ import java.util.ArrayList;
+ import java.util.List;
+ 
+-public class SerialSetup {
++public class RobustSerialSetup {
+     public static <FieldT extends AbstractFieldElementExpanded<FieldT>, G1T extends
+             AbstractG1<G1T>, G2T extends AbstractG2<G2T>, GTT extends AbstractGT<GTT>, PairingT extends
+             AbstractPairing<G1T, G2T, GTT>>
+@@ -88,7 +88,7 @@
+         config.beginLog("Generating G1 MSM Window Table");
+         final G1T generatorG1 = g1Factory.random(config.seed(), config.secureSeed());
+         final int scalarCountG1 = nonZeroAt + nonZeroBt + numVariables;
+-        final int scalarSizeG1 = generatorG1.bitSize();
++        final int scalarSizeG1 = R1CSIO.MODULUS.bitLength();
+         final int windowSizeG1 = FixedBaseMSM.getWindowSize(scalarCountG1, generatorG1);
+         final List<List<G1T>> windowTableG1 = FixedBaseMSM
+                 .getWindowTable(generatorG1, scalarSizeG1, windowSizeG1);
+@@ -97,7 +97,7 @@
+         config.beginLog("Generating G2 MSM Window Table");
+         final G2T generatorG2 = g2Factory.random(config.seed(), config.secureSeed());
+         final int scalarCountG2 = nonZeroBt;
+-        final int scalarSizeG2 = generatorG2.bitSize();
++        final int scalarSizeG2 = R1CSIO.MODULUS.bitLength();
+         final int windowSizeG2 = FixedBaseMSM.getWindowSize(scalarCountG2, generatorG2);
+         final List<List<G2T>> windowTableG2 = FixedBaseMSM
+                 .getWindowTable(generatorG2, scalarSizeG2, windowSizeG2);
+--- upstream/DistributedSetup.java
++++ comparison/RobustDistributedSetup.java
+@@ -5,7 +5,7 @@
+  * @copyright  MIT license (see LICENSE file)
+  *****************************************************************************/
+ 
+-package zk_proof_systems.zkSNARK;
++package comparison;
+ 
+ import algebra.fields.AbstractFieldElementExpanded;
+ import algebra.curves.AbstractG1;
+@@ -26,7 +26,7 @@
+ 
+ import java.util.List;
+ 
+-public class DistributedSetup {
++public class RobustDistributedSetup {
+     public static <FieldT extends AbstractFieldElementExpanded<FieldT>,
+             G1T extends AbstractG1<G1T>,
+             G2T extends AbstractG2<G2T>,
+@@ -80,7 +80,7 @@
+ 
+         config.beginLog("Generating G1 MSM Window Table");
+         final G1T generatorG1 = g1Factory.random(config.seed(), config.secureSeed());
+-        final int scalarSizeG1 = generatorG1.bitSize();
++        final int scalarSizeG1 = R1CSIO.MODULUS.bitLength();
+         final long scalarCountG1 = numNonZeroAt + numNonZeroBt + numVariables;
+         final int windowSizeG1 = FixedBaseMSM.getWindowSize(scalarCountG1 / numPartitions, generatorG1);
+         final List<List<G1T>> windowTableG1 = FixedBaseMSM
+@@ -89,7 +89,7 @@
+ 
+         config.beginLog("Generating G2 MSM Window Table");
+         final G2T generatorG2 = g2Factory.random(config.seed(), config.secureSeed());
+-        final int scalarSizeG2 = generatorG2.bitSize();
++        final int scalarSizeG2 = R1CSIO.MODULUS.bitLength();
+         final long scalarCountG2 = numNonZeroBt;
+         final int windowSizeG2 = FixedBaseMSM.getWindowSize(scalarCountG2 / numPartitions, generatorG2);
+         final List<List<G2T>> windowTableG2 = FixedBaseMSM

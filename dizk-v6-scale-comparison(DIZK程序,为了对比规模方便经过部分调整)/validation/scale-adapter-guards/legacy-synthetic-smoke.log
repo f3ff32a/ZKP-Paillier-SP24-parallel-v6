@@ -1,0 +1,5 @@
+	QAP - primary input size: 2
+	QAP - total input size: 67
+	QAP - pre degree: 64
+	QAP - degree: 128
+BENCH_DIZK scope=synthetic_smoke same_statement=false mode=serial curve=BN254b messages=0 constraints=64 variables=67 primary_inputs=2 threads=1 repeat=1 setup_seconds=0.3143759 prove_seconds=0.3162858 verify_seconds=0.0404913 verified=true input_bundle_sha256=d988b1c23fdf5cf84ec6365913527dd55e61b49bb393b622473fd08dcd770333

@@ -1,0 +1,10 @@
+{
+  "case": "toy_paillier_lifted",
+  "exit_code": 2,
+  "external_elapsed_seconds": 17.939554929733276,
+  "mode": "distributed",
+  "platform": "Windows native JDK8 functional validation, not Ubuntu or performance reproduction",
+  "same_statement": false,
+  "scope": "arithmetic_self_test",
+  "status": "failed"
+}

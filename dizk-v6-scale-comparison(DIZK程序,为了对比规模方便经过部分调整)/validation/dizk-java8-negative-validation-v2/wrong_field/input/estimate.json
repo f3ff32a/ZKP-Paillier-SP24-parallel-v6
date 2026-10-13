@@ -1,0 +1,21 @@
+{
+  "format": "dizk-resource-estimate-v1",
+  "estimate_only": true,
+  "statement_id": "0cf6a95823dd081bf0cb52956895e9e69b4538a151cd13f3cfc6efdc8f32e098",
+  "original_gates": 1,
+  "original_linear_rows": 4,
+  "original_linear_terms": 5,
+  "ring_bits": 1023,
+  "limb_bits": 64,
+  "public_inputs": 65,
+  "estimated_constraints_upper": 22092,
+  "estimated_text_disk_gb_range": [
+    0.0,
+    0.0
+  ],
+  "estimated_java_memory_gb_range": [
+    0.0,
+    0.02
+  ],
+  "resource_estimate_note": "Conservative constraint estimate; byte/heap ranges are planning heuristics, not measurements. Spark can require more memory or spill. Run --estimate-only on the actual exported relation first."
+}

@@ -1,0 +1,100 @@
+{
+  "java_version": "Corretto1.8.0_504",
+  "header_guard_checks": 8,
+  "true_proof_cases": 4,
+  "scale_cases": [
+    {
+      "constraints": 4,
+      "modes": [
+        "serial",
+        "distributed local[2]"
+      ]
+    },
+    {
+      "constraints": 16,
+      "N": 7,
+      "Q": 9,
+      "modes": [
+        "serial",
+        "distributed local[2]"
+      ]
+    }
+  ],
+  "all_verified": true,
+  "runtime_guards": [
+    {
+      "command": [
+        "C:\\Users\\Anynomous\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\outputs\\dizk-v6-scale-comparison\\runtime\\tools\\check_input.py",
+        "--input",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\dizk-scale-runtime-qa\\input-small",
+        "--output",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\scale-adapter-qa\\generator-small-input-record.json",
+        "--constraint-scale"
+      ],
+      "exit": 0,
+      "stdout": "Input recorded: C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\dizk-scale-runtime-qa\\input-small\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Anynomous\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\outputs\\dizk-v6-scale-comparison\\runtime\\tools\\check_results.py",
+        "--csv",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\scale-adapter-qa\\generator-small-serial.csv",
+        "--run-id",
+        "scale-generator-small-serial",
+        "--mode",
+        "serial",
+        "--threads",
+        "1",
+        "--partitions",
+        "1",
+        "--repeat",
+        "1",
+        "--input-record",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\scale-adapter-qa\\generator-small-input-record.json",
+        "--constraint-scale"
+      ],
+      "exit": 0,
+      "stdout": "Validated 1 verified constraint_scale_benchmark result rows\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Anynomous\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\outputs\\dizk-v6-scale-comparison\\runtime\\tools\\check_results.py",
+        "--csv",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\scale-adapter-qa\\generator-small-distributed.csv",
+        "--run-id",
+        "scale-generator-small-distributed",
+        "--mode",
+        "distributed",
+        "--threads",
+        "2",
+        "--partitions",
+        "2",
+        "--repeat",
+        "1",
+        "--input-record",
+        "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\scale-adapter-qa\\generator-small-input-record.json",
+        "--constraint-scale"
+      ],
+      "exit": 0,
+      "stdout": "Validated 1 verified constraint_scale_benchmark result rows\n",
+      "stderr": ""
+    }
+  ],
+  "legacy_synthetic_smoke_verified": true,
+  "source_sha256": {
+    "DizkComparison.java": "dd858ce0ee7b7f5d409604a814b9a4309f47ba90e14657eaa088d1d0824060df",
+    "R1CSIO.java": "e21548c38f22797bb00ffb70ceecbbb05a6c590ea536c4acc341af9cd93470ea"
+  },
+  "notice": "Tiny functional fixtures only; reference CSV a*64 is synthetic QA metadata, not an actual v6 experiment row. Not Ubuntu performance reproduction."
+}

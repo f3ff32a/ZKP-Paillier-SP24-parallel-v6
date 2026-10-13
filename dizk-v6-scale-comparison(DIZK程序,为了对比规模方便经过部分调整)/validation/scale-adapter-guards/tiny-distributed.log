@@ -1,0 +1,54 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+26/10/13 11:32:31 INFO SparkContext: Running Spark version 2.2.2
+26/10/13 11:32:31 WARN SparkContext: Support for Scala 2.10 is deprecated as of Spark 2.1.0
+26/10/13 11:32:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/13 11:32:31 ERROR Shell: Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:378)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:393)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:386)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:93)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:73)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2427)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2427)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:295)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at comparison.DizkComparison.run(DizkComparison.java:185)
+	at comparison.DizkComparison.main(DizkComparison.java:59)
+26/10/13 11:32:31 INFO SparkContext: Submitted application: DIZK constraint-scale benchmark
+26/10/13 11:32:31 INFO SecurityManager: Changing view acls to: Anynomous,CodexSandboxOffline
+26/10/13 11:32:31 INFO SecurityManager: Changing modify acls to: Anynomous,CodexSandboxOffline
+26/10/13 11:32:31 INFO SecurityManager: Changing view acls groups to: 
+26/10/13 11:32:31 INFO SecurityManager: Changing modify acls groups to: 
+26/10/13 11:32:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Anynomous, CodexSandboxOffline); groups with view permissions: Set(); users  with modify permissions: Set(Anynomous, CodexSandboxOffline); groups with modify permissions: Set()
+26/10/13 11:32:37 INFO Utils: Successfully started service 'sparkDriver' on port 3792.
+26/10/13 11:32:37 INFO SparkEnv: Registering MapOutputTracker
+26/10/13 11:32:37 INFO SparkEnv: Registering BlockManagerMaster
+26/10/13 11:32:37 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/13 11:32:37 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/13 11:32:37 INFO DiskBlockManager: Created local directory at C:\Users\Anynomous\AppData\Local\Temp\blockmgr-061ad804-98d5-47be-bbd6-bf5350885cea
+26/10/13 11:32:37 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+26/10/13 11:32:37 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/13 11:32:37 INFO Executor: Starting executor ID driver on host localhost
+26/10/13 11:32:37 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 3801.
+26/10/13 11:32:37 INFO NettyBlockTransferService: Server created on 192.168.0.109:3801
+26/10/13 11:32:37 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/13 11:32:37 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.0.109, 3801, None)
+26/10/13 11:32:37 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.0.109:3801 with 366.3 MB RAM, BlockManagerId(driver, 192.168.0.109, 3801, None)
+26/10/13 11:32:37 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.0.109, 3801, None)
+26/10/13 11:32:37 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.0.109, 3801, None)
+	QAP - primary input size: 2
+	QAP - total input size: 7
+	QAP - pre degree: 4
+	QAP - degree: 8
+BENCH_DIZK scope=constraint_scale_benchmark same_statement=false mode=distributed curve=BN254b messages=1 constraints=4 variables=7 primary_inputs=2 threads=2 repeat=1 setup_seconds=1.1413021 prove_seconds=1.1632238 verify_seconds=0.0711338 verified=true input_bundle_sha256=4f54226afa9a389f8f67389385805c84a034ed77fdca31caaee108a12301d8f3

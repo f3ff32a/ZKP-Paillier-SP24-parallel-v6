@@ -1,0 +1,724 @@
+Running main() from /home/anynomous/ZKP-Paillier-SP24-parallel-v6/deps/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = App.Run
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from App
+[ RUN      ] App.Run
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=1 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.033566764000000006 rng_seconds=9.1300000000000007e-06 encrypt_core_seconds=0.033557634000000003 normal_pipeline_seconds=0.033623767999999998 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=0 payload_fingerprint=7fc1e07b4bd2c5f run_id=1791813270182914
+P.encrypt time: 0.058
+P.Ljir time: 0
+P.Lj time: 0
+P.wireUp time: 0.15
+P.run time: 0.129
+P.circuit time: 0.428
+message count: 1
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 98556
+batch encrypt circuit's Q: 197112
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 314, cols = 314, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 314, cols = 314, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 314, cols = 314, max threads = 16
+P.commit time: 7.221
+P.y time: 0.003
+prover.setY time: 0.087
+prover.rx time: 0.14
+sx.wai time: 0.155
+sx.wbi time: 0.072
+sx.wci time: 0.232
+prover.sx time: 0.461
+prover.rx_ time: 0.349
+prover.ky time: 0.002
+prover.tx.mul time: 1.421
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 49, cols = 47, max threads = 16
+prover.txCommit time: 0.221
+prover.polyCommit time: 2.686
+P.polyCommit time: 2.703
+P.x time: 0.006
+P.prove time: 0.156
+V.Ljir time: 0
+V.wireUp time: 0.167
+V.circuit time: 0.286
+V.y time: 0.007
+V.x time: 0.001
+verifier.polyVerify time: 0.054
+verifier.calcV1 time: 0
+verifier.setY time: 0.075
+sx.wai time: 0.088
+sx.wbi time: 0.044
+sx.wci time: 0.185
+verifier.sx time: 0.433
+verifier.r_ time: 0
+verifier.rr_ time: 0.001
+verifier.calcV2 time: 0.51
+verifier.commitR1 time: 0.06
+verifier.commitR2 time: 0.283
+verifier.verify time: 0.91
+V.verify time: 0.917
+V.attach_value time: 0
+P.decompose time: 1751
+P.decompose-complex time: 908
+
+==========
+message count: 1
+message/batch: 15
+batch count: 1
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 207328 bytes
+proof size/message: 207328 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 98556
+batch encrypt circuit's Q: 197112
+batch encrypt circuit's matrix m: 314
+batch encrypt circuit's matrix n: 314
+
+encryption time: 0.058
+circuit create time: 0.5155
+value assign time: 0.129
+commit time: 7.221
+prove time: 2.868
+verify time: 0.925
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=10 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.029703711000000001 rng_seconds=3.7354000000000002e-05 encrypt_core_seconds=0.029666357000000001 normal_pipeline_seconds=0.029789530000000002 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=97 payload_fingerprint=4b3da26023c1ff4e run_id=1791813270182914
+P.encrypt time: 0.049
+P.Ljir time: 0
+P.Lj time: 0
+P.wireUp time: 0.152
+P.run time: 0.128
+P.circuit time: 0.45
+message count: 10
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 105522
+batch encrypt circuit's Q: 211044
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 325, cols = 325, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 325, cols = 325, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 325, cols = 325, max threads = 16
+P.commit time: 7.689
+P.y time: 0
+prover.setY time: 0.079
+prover.rx time: 0.067
+sx.wai time: 0.093
+sx.wbi time: 0.045
+sx.wci time: 0.199
+prover.sx time: 0.339
+prover.rx_ time: 0.346
+prover.ky time: 0.002
+prover.tx.mul time: 1.399
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 50, cols = 48, max threads = 16
+prover.txCommit time: 0.231
+prover.polyCommit time: 2.466
+P.polyCommit time: 2.486
+P.x time: 0.003
+P.prove time: 0.159
+V.Ljir time: 0
+V.wireUp time: 0.151
+V.circuit time: 0.29
+V.y time: 0.006
+V.x time: 0.001
+verifier.polyVerify time: 0.053
+verifier.calcV1 time: 0
+verifier.setY time: 0.08
+sx.wai time: 0.106
+sx.wbi time: 0.052
+sx.wci time: 0.217
+verifier.sx time: 0.504
+verifier.r_ time: 0
+verifier.rr_ time: 0.003
+verifier.calcV2 time: 0.588
+verifier.commitR1 time: 0.077
+verifier.commitR2 time: 0.307
+verifier.verify time: 1.029
+V.verify time: 1.038
+V.attach_value time: 0
+P.decompose time: 1238
+P.decompose-complex time: 15019
+
+==========
+message count: 10
+message/batch: 15
+batch count: 1
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 213250 bytes
+proof size/message: 21325 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 105522
+batch encrypt circuit's Q: 211044
+batch encrypt circuit's matrix m: 325
+batch encrypt circuit's matrix n: 325
+
+encryption time: 0.049
+circuit create time: 0.5215
+value assign time: 0.128
+commit time: 7.689
+prove time: 2.648
+verify time: 1.045
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=20 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.021206576000000001 rng_seconds=0.00011254 encrypt_core_seconds=0.021094036 normal_pipeline_seconds=0.021422835000000001 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=129 payload_fingerprint=df10934da68efa83 run_id=1791813270182914
+P.encrypt time: 0.045
+P.Ljir time: 0
+P.Lj time: 0
+P.wireUp time: 0.176
+P.run time: 0.139
+P.circuit time: 0.527
+message count: 20
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 114020
+batch encrypt circuit's Q: 228040
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 338, cols = 338, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 338, cols = 338, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 338, cols = 338, max threads = 16
+P.commit time: 8.25
+P.y time: 0.001
+prover.setY time: 0.101
+prover.rx time: 0.073
+sx.wai time: 0.109
+sx.wbi time: 0.055
+sx.wci time: 0.215
+prover.sx time: 0.38
+prover.rx_ time: 0.266
+prover.ky time: 0.002
+prover.tx.mul time: 1.517
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 50, cols = 49, max threads = 16
+prover.txCommit time: 0.225
+prover.polyCommit time: 2.566
+P.polyCommit time: 2.584
+P.x time: 0.004
+P.prove time: 0.174
+V.Ljir time: 0
+V.wireUp time: 0.162
+V.circuit time: 0.338
+V.y time: 0.006
+V.x time: 0.001
+verifier.polyVerify time: 0.054
+verifier.calcV1 time: 0
+verifier.setY time: 0.085
+sx.wai time: 0.113
+sx.wbi time: 0.055
+sx.wci time: 0.219
+verifier.sx time: 0.518
+verifier.r_ time: 0
+verifier.rr_ time: 0.001
+verifier.calcV2 time: 0.606
+verifier.commitR1 time: 0.053
+verifier.commitR2 time: 0.295
+verifier.verify time: 1.011
+V.verify time: 1.02
+V.attach_value time: 0
+P.decompose time: 1344
+P.decompose-complex time: 5027
+
+==========
+message count: 20
+message/batch: 15
+batch count: 2
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 220201 bytes
+proof size/message: 11010 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 114020
+batch encrypt circuit's Q: 228040
+batch encrypt circuit's matrix m: 338
+batch encrypt circuit's matrix n: 338
+
+encryption time: 0.045
+circuit create time: 0.6015
+value assign time: 0.139
+commit time: 8.25
+prove time: 2.763
+verify time: 1.027
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=40 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.02277581 rng_seconds=0.00013544499999999999 encrypt_core_seconds=0.022640364999999999 normal_pipeline_seconds=0.029170899 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=161 payload_fingerprint=2b58703020dd57fb run_id=1791813270182914
+P.encrypt time: 0.051
+P.Ljir time: 0
+P.Lj time: 0
+P.wireUp time: 0.189
+P.run time: 0.158
+P.circuit time: 0.625
+message count: 40
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 130258
+batch encrypt circuit's Q: 260516
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 361, cols = 361, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 361, cols = 361, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 361, cols = 361, max threads = 16
+P.commit time: 9.178
+P.y time: 0.004
+prover.setY time: 0.095
+prover.rx time: 0.087
+sx.wai time: 0.127
+sx.wbi time: 0.061
+sx.wci time: 0.25
+prover.sx time: 0.439
+prover.rx_ time: 0.347
+prover.ky time: 0.002
+prover.tx.mul time: 1.601
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 52, cols = 51, max threads = 16
+prover.txCommit time: 0.244
+prover.polyCommit time: 2.818
+P.polyCommit time: 2.844
+P.x time: 0.003
+P.prove time: 0.214
+V.Ljir time: 0
+V.wireUp time: 0.189
+V.circuit time: 0.372
+V.y time: 0.006
+V.x time: 0.001
+verifier.polyVerify time: 0.055
+verifier.calcV1 time: 0
+verifier.setY time: 0.098
+sx.wai time: 0.134
+sx.wbi time: 0.064
+sx.wci time: 0.255
+verifier.sx time: 0.608
+verifier.r_ time: 0
+verifier.rr_ time: 0.001
+verifier.calcV2 time: 0.709
+verifier.commitR1 time: 0.057
+verifier.commitR2 time: 0.317
+verifier.verify time: 1.142
+V.verify time: 1.152
+V.attach_value time: 0
+P.decompose time: 1480
+P.decompose-complex time: 5225
+
+==========
+message count: 40
+message/batch: 15
+batch count: 3
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 232688 bytes
+proof size/message: 5817.2 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 130258
+batch encrypt circuit's Q: 260516
+batch encrypt circuit's matrix m: 361
+batch encrypt circuit's matrix n: 361
+
+encryption time: 0.051
+circuit create time: 0.6875
+value assign time: 0.158
+commit time: 9.178
+prove time: 3.065
+verify time: 1.159
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=80 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.019442289000000001 rng_seconds=0.00027925299999999998 encrypt_core_seconds=0.019163036000000001 normal_pipeline_seconds=0.020211722000000001 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=193 payload_fingerprint=c2f529f081e39797 run_id=1791813270182914
+P.encrypt time: 0.047
+P.Ljir time: 0
+P.Lj time: 0
+P.wireUp time: 0.243
+P.run time: 0.201
+P.circuit time: 0.803
+message count: 80
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 163492
+batch encrypt circuit's Q: 326984
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 404, cols = 405, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 404, cols = 405, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 404, cols = 405, max threads = 16
+P.commit time: 10.804
+P.y time: 0.003
+prover.setY time: 0.123
+prover.rx time: 0.117
+sx.wai time: 0.335
+sx.wbi time: 0.107
+sx.wci time: 0.328
+prover.sx time: 0.771
+prover.rx_ time: 0.482
+prover.ky time: 0.002
+prover.tx.mul time: 1.875
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 54, cols = 54, max threads = 16
+prover.txCommit time: 0.261
+prover.polyCommit time: 3.635
+P.polyCommit time: 3.667
+P.x time: 0.005
+P.prove time: 0.269
+V.Ljir time: 0
+V.wireUp time: 0.239
+V.circuit time: 0.456
+V.y time: 0.007
+V.x time: 0
+verifier.polyVerify time: 0.06
+verifier.calcV1 time: 0
+verifier.setY time: 0.122
+sx.wai time: 0.18
+sx.wbi time: 0.077
+sx.wci time: 0.319
+verifier.sx time: 0.766
+verifier.r_ time: 0
+verifier.rr_ time: 0.002
+verifier.calcV2 time: 0.89
+verifier.commitR1 time: 0.057
+verifier.commitR2 time: 0.359
+verifier.verify time: 1.369
+V.verify time: 1.381
+V.attach_value time: 0
+P.decompose time: 1363
+P.decompose-complex time: 5073
+
+==========
+message count: 80
+message/batch: 15
+batch count: 6
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 255987 bytes
+proof size/message: 3199.84 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 163492
+batch encrypt circuit's Q: 326984
+batch encrypt circuit's matrix m: 404
+batch encrypt circuit's matrix n: 405
+
+encryption time: 0.047
+circuit create time: 0.8705
+value assign time: 0.201
+commit time: 10.804
+prove time: 3.944
+verify time: 1.388
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=100 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.023756868 rng_seconds=0.00033817500000000002 encrypt_core_seconds=0.023418693000000001 normal_pipeline_seconds=0.030625946000000001 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=193 payload_fingerprint=b94e685a119051d run_id=1791813270182914
+P.encrypt time: 0.054
+P.Ljir time: 0
+P.Lj time: 0.001
+P.wireUp time: 0.269
+P.run time: 0.217
+P.circuit time: 0.79
+message count: 100
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 179730
+batch encrypt circuit's Q: 359460
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 424, cols = 424, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 424, cols = 424, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 424, cols = 424, max threads = 16
+P.commit time: 11.465
+P.y time: 0.003
+prover.setY time: 0.141
+prover.rx time: 0.119
+sx.wai time: 0.186
+sx.wbi time: 0.082
+sx.wci time: 0.342
+prover.sx time: 0.61
+prover.rx_ time: 0.48
+prover.ky time: 0.003
+prover.tx.mul time: 2.003
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 56, cols = 55, max threads = 16
+prover.txCommit time: 0.259
+prover.polyCommit time: 3.619
+P.polyCommit time: 3.649
+P.x time: 0.005
+P.prove time: 0.278
+V.Ljir time: 0
+V.wireUp time: 0.267
+V.circuit time: 0.509
+V.y time: 0.008
+V.x time: 0
+verifier.polyVerify time: 0.065
+verifier.calcV1 time: 0
+verifier.setY time: 0.144
+sx.wai time: 0.207
+sx.wbi time: 0.085
+sx.wci time: 0.337
+verifier.sx time: 0.839
+verifier.r_ time: 0
+verifier.rr_ time: 0.002
+verifier.calcV2 time: 0.987
+verifier.commitR1 time: 0.061
+verifier.commitR2 time: 0.371
+verifier.verify time: 1.487
+V.verify time: 1.5
+V.attach_value time: 0
+P.decompose time: 1309
+P.decompose-complex time: 5281
+
+==========
+message count: 100
+message/batch: 15
+batch count: 7
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 266673 bytes
+proof size/message: 2666.73 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 179730
+batch encrypt circuit's Q: 359460
+batch encrypt circuit's matrix m: 424
+batch encrypt circuit's matrix n: 424
+
+encryption time: 0.054
+circuit create time: 0.918
+value assign time: 0.217
+commit time: 11.465
+prove time: 3.935
+verify time: 1.508
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=200 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.023642746999999999 rng_seconds=0.00066080100000000003 encrypt_core_seconds=0.022981946 normal_pipeline_seconds=0.031255493000000002 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=225 payload_fingerprint=ac4934c6f00e1139 run_id=1791813270182914
+P.encrypt time: 0.052
+P.Ljir time: 0
+P.Lj time: 0.002
+P.wireUp time: 0.4
+P.run time: 0.342
+P.circuit time: 1.563
+message count: 200
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 262436
+batch encrypt circuit's Q: 524872
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 512, cols = 513, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 512, cols = 513, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 512, cols = 513, max threads = 16
+P.commit time: 15.478
+P.y time: 0.004
+prover.setY time: 0.203
+prover.rx time: 0.361
+sx.wai time: 0.495
+sx.wbi time: 0.178
+sx.wci time: 0.529
+prover.sx time: 1.203
+prover.rx_ time: 0.755
+prover.ky time: 0.004
+prover.tx.mul time: 2.625
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 62, cols = 60, max threads = 16
+prover.txCommit time: 0.272
+prover.polyCommit time: 5.426
+P.polyCommit time: 5.474
+P.x time: 0.004
+P.prove time: 0.419
+V.Ljir time: 0
+V.wireUp time: 0.399
+V.circuit time: 0.818
+V.y time: 0.01
+V.x time: 0.001
+verifier.polyVerify time: 0.077
+verifier.calcV1 time: 0.001
+verifier.setY time: 0.198
+sx.wai time: 0.33
+sx.wbi time: 0.135
+sx.wci time: 0.524
+verifier.sx time: 1.292
+verifier.r_ time: 0
+verifier.rr_ time: 0.003
+verifier.calcV2 time: 1.495
+verifier.commitR1 time: 0.066
+verifier.commitR2 time: 0.451
+verifier.verify time: 2.093
+V.verify time: 2.113
+V.attach_value time: 0.001
+P.decompose time: 1086
+P.decompose-complex time: 4960
+
+==========
+message count: 200
+message/batch: 15
+batch count: 14
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 314431 bytes
+proof size/message: 1572.15 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 262436
+batch encrypt circuit's Q: 524872
+batch encrypt circuit's matrix m: 512
+batch encrypt circuit's matrix n: 513
+
+encryption time: 0.052
+circuit create time: 1.591
+value assign time: 0.342
+commit time: 15.478
+prove time: 5.901
+verify time: 2.124
+==========
+====================
+[CBatchEnc::encrypt] OpenMP ENABLED, _OPENMP = 201511
+[CBatchEnc::encrypt] max threads = 16
+[CBatchEnc::encrypt] actual threads = 16
+BENCH_V6_NORMAL_ENCRYPT messages=400 actual_bits=512 threads=16 actual_threads=16 repeat=1 seconds=0.024099698999999999 rng_seconds=0.0013427599999999999 encrypt_core_seconds=0.022756939 normal_pipeline_seconds=0.027258985999999999 workload=v6 timing_scope=normal_messages_rng_plus_gmp plaintext_bits=257 payload_fingerprint=2814bb8bbf7f4583 run_id=1791813270182914
+P.encrypt time: 0.051
+P.Ljir time: 0
+P.Lj time: 0.006
+P.wireUp time: 0.654
+P.run time: 0.53
+P.circuit time: 2.723
+message count: 400
+byte length: 512-bit
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 427090
+batch encrypt circuit's Q: 854180
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 654, cols = 654, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 654, cols = 654, max threads = 16
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 654, cols = 654, max threads = 16
+P.commit time: 23.098
+P.y time: 0.004
+prover.setY time: 0.321
+prover.rx time: 0.584
+sx.wai time: 0.816
+sx.wbi time: 0.29
+sx.wci time: 0.867
+prover.sx time: 1.974
+prover.rx_ time: 1.251
+prover.ky time: 0.006
+prover.tx.mul time: 6.054
+prover.txT time: 0
+[PolynomialCommitment::commit(Mat)] OpenMP GMP path, rows = 69, cols = 68, max threads = 16
+prover.txCommit time: 0.323
+prover.polyCommit time: 10.517
+P.polyCommit time: 10.596
+P.x time: 0.005
+P.prove time: 0.682
+V.Ljir time: 0
+V.wireUp time: 0.677
+V.circuit time: 1.334
+V.y time: 0.011
+V.x time: 0.002
+verifier.polyVerify time: 0.098
+verifier.calcV1 time: 0.001
+verifier.setY time: 0.32
+sx.wai time: 0.568
+sx.wbi time: 0.231
+sx.wci time: 0.838
+verifier.sx time: 2.133
+verifier.r_ time: 0
+verifier.rr_ time: 0.005
+verifier.calcV2 time: 2.459
+verifier.commitR1 time: 0.073
+verifier.commitR2 time: 0.576
+verifier.verify time: 3.211
+V.verify time: 3.242
+V.attach_value time: 0.003
+P.decompose time: 1326
+P.decompose-complex time: 6064
+
+==========
+message count: 400
+message/batch: 15
+batch count: 27
+byte length: 512-bit
+byte length: 64 bytes
+message size: 64 bytes
+slot size: 4 bytes
+slot/message: 16
+range proof count: 128
+cipher size: 128 bytes
+proof size: 391024 bytes
+proof size/message: 977.56 bytes
+
+single encrypt circuit's N: 758
+single encrypt circuit's Q: 1515
+batch encrypt circuit's N: 427090
+batch encrypt circuit's Q: 854180
+batch encrypt circuit's matrix m: 654
+batch encrypt circuit's matrix n: 654
+
+encryption time: 0.051
+circuit create time: 2.697
+value assign time: 0.53
+commit time: 23.098
+prove time: 11.287
+verify time: 3.255
+==========
+[       OK ] App.Run (168446 ms)
+[----------] 1 test from App (168446 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (168446 ms total)
+[  PASSED  ] 1 test.

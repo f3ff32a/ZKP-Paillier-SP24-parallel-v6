@@ -1,0 +1,10 @@
+{
+  "case": "ring512_lifted",
+  "exit_code": 2,
+  "external_elapsed_seconds": 31.675694227218628,
+  "mode": "serial",
+  "platform": "Windows native JDK8 functional validation, not Ubuntu or performance reproduction",
+  "same_statement": false,
+  "scope": "arithmetic_self_test",
+  "status": "failed"
+}

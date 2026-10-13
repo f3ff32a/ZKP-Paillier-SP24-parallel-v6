@@ -1,0 +1,8 @@
+	QAP - primary input size: 65
+	QAP - total input size: 11236
+	QAP - pre degree: 11335
+	QAP - degree: 16384
+DIZK_COMPARISON_FAILED IllegalStateException: DIZK proof verification returned false
+java.lang.IllegalStateException: DIZK proof verification returned false
+	at comparison.DizkComparison.run(DizkComparison.java:281)
+	at comparison.DizkComparison.main(DizkComparison.java:60)

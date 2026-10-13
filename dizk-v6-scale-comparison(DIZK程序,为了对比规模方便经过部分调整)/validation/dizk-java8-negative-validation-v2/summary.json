@@ -1,0 +1,56 @@
+[
+  {
+    "case": "wrong_field",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 0.23500000000012733,
+    "expected_error": "R1CS_DOMAIN_MISMATCH",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  },
+  {
+    "case": "native_ring",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 0.23500000000012733,
+    "expected_error": "Unsupported R1CS format",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  },
+  {
+    "case": "public_k_mismatch",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 5.375,
+    "expected_error": "PUBLIC_INPUT_MISMATCH",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  },
+  {
+    "case": "incomplete",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 0.26499999999987267,
+    "expected_error": "incomplete",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  },
+  {
+    "case": "mutated_bit_serial",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 5.4529999999999745,
+    "expected_error": "satisf",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  },
+  {
+    "case": "mutated_bit_distributed",
+    "exit_code": 2,
+    "rejected": true,
+    "no_success_csv": true,
+    "elapsed_s": 11.514999999999873,
+    "expected_error": "satisf",
+    "platform": "Windows Java8 functional negative-input validation; not Ubuntu benchmark"
+  }
+]

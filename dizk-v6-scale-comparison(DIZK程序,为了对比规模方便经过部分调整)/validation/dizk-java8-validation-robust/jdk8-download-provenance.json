@@ -1,0 +1,8 @@
+{
+  "url": "https://corretto.aws/downloads/resources/8.504.04.1/amazon-corretto-8.504.04.1-windows-x64-jdk.zip",
+  "sha256_url": "https://corretto.aws/downloads/latest_sha256/amazon-corretto-8-x64-windows-jdk.zip",
+  "sha256": "7eaaa3fdc72fe39b466f6d18d1e30ada75cad21363c7c2544f2177c9bb090de6",
+  "size": 105894629,
+  "crc_verified": true,
+  "purpose": "task-local Windows Java8 compile/proof validation only"
+}

@@ -1,0 +1,23 @@
+{
+  "format": "dizk-r1cs-v2",
+  "field_modulus": "17855808334804902850260923831770255773646114952324966112694569107431857586177",
+  "scope": "constraint_scale_benchmark",
+  "same_statement": false,
+  "paillier_bits": 0,
+  "reference_paillier_bits": 512,
+  "messages": 1,
+  "variables": 7,
+  "constraints": 4,
+  "primary_inputs": 2,
+  "multiplication_constraints": 1,
+  "linear_constraints": 3,
+  "generator_id": "field_chain_mix_v1",
+  "public_values": [
+    "1",
+    "80728"
+  ],
+  "reference_csv_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "relation_hash": "0c3f7e90e9fb0d7f1eba1393f6e05127e66c23de3ed59b2e414abb14c2f6217b",
+  "assignment_hash": "111fe826766c9dec9765e28a204ed15cb11e9b511ff0012b16e9cc018df677cb",
+  "statement_id": "e016b02cf67b4162c02d6cb35c333cf2a2fb0be1b645803eb22ede7816c7b136"
+}

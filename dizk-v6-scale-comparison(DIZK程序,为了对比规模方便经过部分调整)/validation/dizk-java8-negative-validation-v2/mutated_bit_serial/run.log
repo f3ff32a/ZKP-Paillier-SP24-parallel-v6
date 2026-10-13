@@ -1,0 +1,8 @@
+R1CSConstraint unsatisfied:
+<a,(1,x)> = 2
+<b,(1,x)> = 1
+<c,(1,x)> = 0
+DIZK_COMPARISON_FAILED IllegalArgumentException: R1CS witness does not satisfy the imported statement
+java.lang.IllegalArgumentException: R1CS witness does not satisfy the imported statement
+	at comparison.DizkComparison.run(DizkComparison.java:245)
+	at comparison.DizkComparison.main(DizkComparison.java:58)

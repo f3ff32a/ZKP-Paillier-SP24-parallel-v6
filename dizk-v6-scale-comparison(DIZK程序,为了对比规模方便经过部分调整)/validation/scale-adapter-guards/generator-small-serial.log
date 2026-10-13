@@ -1,0 +1,5 @@
+	QAP - primary input size: 2
+	QAP - total input size: 19
+	QAP - pre degree: 16
+	QAP - degree: 32
+BENCH_DIZK scope=constraint_scale_benchmark same_statement=false mode=serial curve=BN254b messages=1 constraints=16 variables=19 primary_inputs=2 threads=1 repeat=1 setup_seconds=0.169266 prove_seconds=0.1146875 verify_seconds=0.0616122 verified=true input_bundle_sha256=99de6194e5cbe42d84e3f60cac20182179089b70f7d81ac7e4174339600c1ccd

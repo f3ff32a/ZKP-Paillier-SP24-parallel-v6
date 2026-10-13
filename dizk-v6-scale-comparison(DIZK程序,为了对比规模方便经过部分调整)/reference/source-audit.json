@@ -1,0 +1,517 @@
+{
+  "archive_sha256": "4bebe45ac5282c8a17e797c750bf0cbed5d850d430d37788f87e5df1816b4e10",
+  "archive_entries": 80,
+  "archive_crc": "passed",
+  "environment": {
+    "guest_os_evidence": "Ubuntu 18.04 toolchain/kernel package tags; /etc/os-release was not recorded",
+    "kernel": "5.4.0-150-generic #167~18.04.1-Ubuntu",
+    "virtualization": "VMware full virtualization",
+    "cpu_model_label": "12th Gen Intel Core i9-12900HX",
+    "guest_online_vcpu": 16,
+    "guest_cpu_mhz": 2496.0,
+    "memory_free_h_total": "23G",
+    "memory_free_h_available": "21G",
+    "swap_total": "2.0G",
+    "gxx": "7.5.0",
+    "gmp_development_package": "2:6.1.2+dfsg-2ubuntu0.1",
+    "ntl_development_package": "10.5.0-2",
+    "compiler_flags_recorded": "-O3 -std=c++11 -pthread -fopenmp -march=native; coverage disabled",
+    "flags_limit": "build.log records chosen flags and successful output path, but does not include the complete compiler command or separate Ma environment"
+  },
+  "run": {
+    "messages": [
+      1,
+      10,
+      20,
+      40,
+      80,
+      100,
+      200,
+      400
+    ],
+    "actual_bits_each_point": 512,
+    "threads_each_point": 16,
+    "repeats_each_point": 1,
+    "google_test": "App.Run PASSED",
+    "app_test_wall_seconds": 168.446,
+    "zkp_validity": "Supported as true for all 8 points: EndToEnd captures the verifier result at line 221 and throws invalid_argument if false at lines 441-442; App.Run completed successfully after all 8 calls",
+    "normal_verified_unknown": "The marker omits a verified token, so parse_v6_log.py initializes unknown (line 36; conditional token override lines 90-91). This field does not negate separately evidenced ZKP success and does not certify per-ciphertext decrypt-and-compare roundtrips."
+  },
+  "verifier_paths": {
+    "CircuitZKPVerifier.cpp": {
+      "size_false": [
+        409,
+        410
+      ],
+      "polyverify_false": [
+        425,
+        426
+      ],
+      "polynomial_identity_false": [
+        482,
+        483
+      ],
+      "final_commit_false": [
+        525,
+        526
+      ],
+      "true": [
+        528
+      ],
+      "internal_timer_precedes_final_check": [
+        523,
+        525
+      ]
+    },
+    "PolynomialCommitment.cpp": {
+      "commit_count_throw": [
+        469,
+        470
+      ],
+      "eval_count_throw": [
+        471,
+        472
+      ],
+      "commitment_result": [
+        519,
+        520
+      ]
+    },
+    "EndToEnd.cpp": {
+      "capture": [
+        221
+      ],
+      "failure_throw": [
+        441,
+        442
+      ]
+    },
+    "log_evidence": {
+      "verifier_polyVerify_timer_count": 8,
+      "verifier_commitR1_timer_count": 8,
+      "verifier_commitR2_timer_count": 8
+    }
+  },
+  "timing": {
+    "sum_six_stages_all_points_seconds": 152.6785,
+    "sum_reported_half_circuit_all_points_seconds": 8.4025,
+    "app_wall_minus_sum_six_seconds": 15.767499999999984,
+    "sum_six_with_both_circuit_sides_seconds": 161.08100000000002,
+    "app_wall_minus_sum_six_with_both_circuit_sides_seconds": 7.364999999999984,
+    "full_six_limit": "CSV six-stage sum is a reported-stage sum, not complete wall time. circuitTime is an aggregate of prover and verifier circuit construction then divided by 2 at EndToEnd line 322. App.Run also includes key/generator setup, transfer, aggregation/decryption, cleanup and output outside six reported stages.",
+    "normal_scope": "rng_seconds is only serial pickRandom; core is whole normal-message OpenMP GMP helper including decimal import/export and scheduling; their sum excludes outer decimal preparation and NTL restoration; pipeline additionally includes allocation and both adaptations. Auxiliary CRj/Cm_, circuit generation, commitments, ZKP proving and verification are excluded from these normal-message timers.",
+    "precision": "Legacy full-stage Timer::end truncates to milliseconds (Timer.cpp14-15); normal-message timers use steady_clock duration<double>."
+  },
+  "source": {
+    "files_hash_checked": 53,
+    "guarded_code_files": 43,
+    "original_code_signature": "522962952ef1e80773d68a5790be79782731f687037abea8a41c008984762356",
+    "changed_cpp": [
+      "src/cpp/app/CBatchEnc.cpp",
+      "src/cpp/app/EndToEnd.cpp",
+      "src/cpp/app/PaillierEncryption.cpp",
+      "test/cpp/App_test.cpp"
+    ],
+    "unchanged_file_count": 49,
+    "canonical_app_sha256": "817549eebaf8c014c9bf7e7db76809fd8d103c7380a07da2ad328b456e2c0cf5",
+    "tool_version": "2"
+  },
+  "full_table": [
+    {
+      "messages": 1,
+      "encryption_s": 0.058,
+      "circuit_s": 0.5155,
+      "value_s": 0.129,
+      "commit_s": 7.221,
+      "prove_s": 2.868,
+      "verify_s": 0.925,
+      "sum_six_stages_s": 11.7165,
+      "phase1_s": 10.7915,
+      "phase2_s": 0.925,
+      "normal_rng_plus_gmp_ms": 33.566764000000006,
+      "normal_pipeline_ms": 33.623768,
+      "commit_share_pct": 61.63103315836641,
+      "commit_and_prove_share_pct": 86.10933299193447
+    },
+    {
+      "messages": 10,
+      "encryption_s": 0.049,
+      "circuit_s": 0.5215,
+      "value_s": 0.128,
+      "commit_s": 7.689,
+      "prove_s": 2.648,
+      "verify_s": 1.045,
+      "sum_six_stages_s": 12.0805,
+      "phase1_s": 11.0355,
+      "phase2_s": 1.045,
+      "normal_rng_plus_gmp_ms": 29.703711000000002,
+      "normal_pipeline_ms": 29.789530000000003,
+      "commit_share_pct": 63.64802781341832,
+      "commit_and_prove_share_pct": 85.56765034559828
+    },
+    {
+      "messages": 20,
+      "encryption_s": 0.045,
+      "circuit_s": 0.6015,
+      "value_s": 0.139,
+      "commit_s": 8.25,
+      "prove_s": 2.763,
+      "verify_s": 1.027,
+      "sum_six_stages_s": 12.8255,
+      "phase1_s": 11.7985,
+      "phase2_s": 1.027,
+      "normal_rng_plus_gmp_ms": 21.206576000000002,
+      "normal_pipeline_ms": 21.422835000000003,
+      "commit_share_pct": 64.32497758371993,
+      "commit_and_prove_share_pct": 85.86799734903123
+    },
+    {
+      "messages": 40,
+      "encryption_s": 0.051,
+      "circuit_s": 0.6875,
+      "value_s": 0.158,
+      "commit_s": 9.178,
+      "prove_s": 3.065,
+      "verify_s": 1.159,
+      "sum_six_stages_s": 14.2985,
+      "phase1_s": 13.1395,
+      "phase2_s": 1.159,
+      "normal_rng_plus_gmp_ms": 22.77581,
+      "normal_pipeline_ms": 29.170899,
+      "commit_share_pct": 64.18855124663426,
+      "commit_and_prove_share_pct": 85.62436619225792
+    },
+    {
+      "messages": 80,
+      "encryption_s": 0.047,
+      "circuit_s": 0.8705,
+      "value_s": 0.201,
+      "commit_s": 10.804,
+      "prove_s": 3.944,
+      "verify_s": 1.388,
+      "sum_six_stages_s": 17.2545,
+      "phase1_s": 15.8665,
+      "phase2_s": 1.388,
+      "normal_rng_plus_gmp_ms": 19.442289000000002,
+      "normal_pipeline_ms": 20.211722,
+      "commit_share_pct": 62.615549566779684,
+      "commit_and_prove_share_pct": 85.4733547770147
+    },
+    {
+      "messages": 100,
+      "encryption_s": 0.054,
+      "circuit_s": 0.918,
+      "value_s": 0.217,
+      "commit_s": 11.465,
+      "prove_s": 3.935,
+      "verify_s": 1.508,
+      "sum_six_stages_s": 18.097,
+      "phase1_s": 16.589,
+      "phase2_s": 1.508,
+      "normal_rng_plus_gmp_ms": 23.756868,
+      "normal_pipeline_ms": 30.625946000000003,
+      "commit_share_pct": 63.35304194065314,
+      "commit_and_prove_share_pct": 85.09697739956898
+    },
+    {
+      "messages": 200,
+      "encryption_s": 0.052,
+      "circuit_s": 1.591,
+      "value_s": 0.342,
+      "commit_s": 15.478,
+      "prove_s": 5.901,
+      "verify_s": 2.124,
+      "sum_six_stages_s": 25.488,
+      "phase1_s": 23.364,
+      "phase2_s": 2.125,
+      "normal_rng_plus_gmp_ms": 23.642747,
+      "normal_pipeline_ms": 31.255493,
+      "commit_share_pct": 60.72661644695543,
+      "commit_and_prove_share_pct": 83.87868801004393
+    },
+    {
+      "messages": 400,
+      "encryption_s": 0.051,
+      "circuit_s": 2.697,
+      "value_s": 0.53,
+      "commit_s": 23.098,
+      "prove_s": 11.287,
+      "verify_s": 3.255,
+      "sum_six_stages_s": 40.918,
+      "phase1_s": 37.663,
+      "phase2_s": 3.258,
+      "normal_rng_plus_gmp_ms": 24.099698999999998,
+      "normal_pipeline_ms": 27.258986,
+      "commit_share_pct": 56.4494843345227,
+      "commit_and_prove_share_pct": 84.03392150153967
+    }
+  ],
+  "source_checks": {
+    ".editorconfig": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    ".gitignore": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    ".gitlab-ci.yml": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    ".gitmodules": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "COMMIT_PARALLELIZATION_NOTES.md": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "Doxyfile": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "Makefile": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "PARALLELIZATION_NOTES.md": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "README.md": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "docs/images/class_diagram.png": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/Makefile": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/App.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/App.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CBase.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CBase.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CBatchEnc.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": true
+    },
+    "src/cpp/app/CBatchEnc.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CEnc.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CEnc.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CircuitZKPProver.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CircuitZKPProver.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CircuitZKPVerifier.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/CircuitZKPVerifier.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/EndToEnd.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": true
+    },
+    "src/cpp/app/EndToEnd.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/PaillierEncryption.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": true
+    },
+    "src/cpp/app/PaillierEncryption.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/PolynomialCommitment.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/PolynomialCommitment.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/math/MathUtils.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/math/MathUtils.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/math/Matrix.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/math/Matrix.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/namespace.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/utils/ConvertUtils.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/utils/ConvertUtils.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/utils/MemoryUtils.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/utils/Timer.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/app/utils/Timer.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/vendor/json/fifo_map.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "src/cpp/vendor/json/json.hpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/.gitignore": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/App_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": true
+    },
+    "test/cpp/CBase_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/CBatchEnc_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/CEnc_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/CircuitZKP_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/Makefile": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/Ntl_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/PolynomialCommitment_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/matrix_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/paillier_test.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    },
+    "test/cpp/unit_test1.cpp": {
+      "source_sha256_verified": true,
+      "prepared_sha256_verified": true,
+      "changed": false
+    }
+  },
+  "verification_scope": "Read-only audit of supplied logs, CSV and archived source hashes; no executable was run and no user file modified"
+}

@@ -1,0 +1,6 @@
+DIZK_COMPARISON_FAILED IllegalArgumentException: PUBLIC_INPUT_MISMATCH: witness public prefix differs from original K limb 1
+java.lang.IllegalArgumentException: PUBLIC_INPUT_MISMATCH: witness public prefix differs from original K limb 1
+	at comparison.R1CSIO.validatePublic(R1CSIO.java:152)
+	at comparison.R1CSIO.serial(R1CSIO.java:236)
+	at comparison.DizkComparison.run(DizkComparison.java:228)
+	at comparison.DizkComparison.main(DizkComparison.java:58)

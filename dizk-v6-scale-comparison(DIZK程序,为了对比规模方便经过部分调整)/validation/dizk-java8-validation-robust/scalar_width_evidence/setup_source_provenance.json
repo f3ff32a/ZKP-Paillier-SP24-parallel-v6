@@ -1,0 +1,16 @@
+{
+  "changes": "package/class rename and exactly two scalar-width expressions per setup class",
+  "files": {
+    "DistributedSetup": {
+      "adapter_sha256": "2f9368b081b814789e4155abfcd82240b30d39d36ff7f5123e17a30a2a0c9019",
+      "upstream_sha256": "10f28d9fc746bb4b7bc793eca4a6af39e8b8b5e6c3ed6e1f0061a9d415bddb8f"
+    },
+    "SerialSetup": {
+      "adapter_sha256": "8f953d8c7b906a74a00ff4fb50c02644060c4a676279b885efd202d46dfd8770",
+      "upstream_sha256": "9649cdd660de286de5dea901147756b4d54922bf01d8ef120680902a9952af29"
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/scipr-lab/dizk",
+  "upstream_commit": "29fb0f78964cd6019029d20228ee0bee3184e64d"
+}

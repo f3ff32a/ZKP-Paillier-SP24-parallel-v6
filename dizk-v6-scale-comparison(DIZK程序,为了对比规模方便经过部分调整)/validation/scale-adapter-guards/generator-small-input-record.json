@@ -1,0 +1,37 @@
+{
+  "directory": "C:\\Users\\Anynomous\\Documents\\Codex\\2026-10-12\\a-related-work-cpu-side-acceleration-2\\work\\dizk-scale-runtime-qa\\input-small",
+  "format": "dizk-input-snapshot-v1",
+  "header": {
+    "assignment_hash": "3d56efc0dda6f3255f2b6623487f61ee185bffee9c5126b97efcf555f87c7f48",
+    "assignment_order": "0,2,3,4..M+2,1; explicit indices, unique and complete",
+    "constraints": 16,
+    "field_modulus": "17855808334804902850260923831770255773646114952324966112694569107431857586177",
+    "format": "dizk-r1cs-v2",
+    "generator_id": "field_chain_mix_v1",
+    "linear_constraints": 9,
+    "messages": 1,
+    "multiplication_constraints": 7,
+    "paillier_bits": 0,
+    "primary_inputs": 2,
+    "public_values": [
+      "1",
+      "14560222041969504163207835908828593635868177074820526303349394815675719862134"
+    ],
+    "reference_csv_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reference_paillier_bits": 512,
+    "relation_hash": "fab827322805fe1cc0218fb593aa3dff3d833c24c51466451752daf4f52d3bc4",
+    "relation_notice": "Counts match the reference row only. This sparse prime-field chain is not the Paillier computation, topology or cryptographic protocol.",
+    "same_statement": false,
+    "scope": "constraint_scale_benchmark",
+    "seed": "constraint-scale-default-v1",
+    "statement_id": "c54907782e6183ea25d636a8d3640bb17251c4287bd11d9fe9b2c9b438068313",
+    "statement_id_algorithm": "SHA256(constraint-scale-statement-v1 LF + sorted compact public metadata JSON including relation_hash + LF)",
+    "variables": 19
+  },
+  "input_bundle_sha256": "99de6194e5cbe42d84e3f60cac20182179089b70f7d81ac7e4174339600c1ccd",
+  "sha256": {
+    "assignment.tsv": "3d56efc0dda6f3255f2b6623487f61ee185bffee9c5126b97efcf555f87c7f48",
+    "constraints.tsv": "fab827322805fe1cc0218fb593aa3dff3d833c24c51466451752daf4f52d3bc4",
+    "header.json": "b1b8560373cf6593477ae933f3457d53ace3474af831143869f992e0baf9e7b2"
+  }
+}
